@@ -142,4 +142,10 @@
       <Name>FoodSaver</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pikachu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fridge.png" />
+  </ItemGroup>
 </Project>

@@ -14,12 +14,12 @@ namespace FoodSaver.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Bread", Description="Nov 1" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Chicken", Description="Oct 27" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Yogourt", Description="Oct 29" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Milk", Description="Nov 2" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Eggs", Description="Nov 5" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Cheese", Description="Nov 2" }
             };
         }
 

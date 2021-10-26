@@ -19,7 +19,7 @@ namespace FoodSaver.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "My Food";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

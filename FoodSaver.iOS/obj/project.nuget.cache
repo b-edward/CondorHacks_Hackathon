@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "kBkP61z52tOmj4S8SPXMLgv4CGCM1ER04V2XdZGCvfnt7Kb7OZfybx91DSesP5EqIGE60bSdDL9sXFH9E8MSoQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\edboa\\Source\\Repos\\Semester 3 Repos\\GDSC\\CondorHacks\\CondorHacksProject\\FoodSaver\\FoodSaver.iOS\\FoodSaver.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edboa\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\edboa\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\edboa\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edboa\\Source\\Repos\\Semester 3 Repos\\GDSC\\CondorHacks\\CondorHacksProject\\FoodSaver\\FoodSaverApp\\FoodSaverApp\\FoodSaverApp.csproj": {}
+    "C:\\Users\\Gavin Abeele\\Source\\Repos\\CondorHacks_Hackathon_V3\\FoodSaverApp\\FoodSaverApp\\FoodSaverApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edboa\\Source\\Repos\\Semester 3 Repos\\GDSC\\CondorHacks\\CondorHacksProject\\FoodSaver\\FoodSaverApp\\FoodSaverApp\\FoodSaverApp.csproj": {
+    "C:\\Users\\Gavin Abeele\\Source\\Repos\\CondorHacks_Hackathon_V3\\FoodSaverApp\\FoodSaverApp\\FoodSaverApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edboa\\Source\\Repos\\Semester 3 Repos\\GDSC\\CondorHacks\\CondorHacksProject\\FoodSaver\\FoodSaverApp\\FoodSaverApp\\FoodSaverApp.csproj",
+        "projectUniqueName": "C:\\Users\\Gavin Abeele\\Source\\Repos\\CondorHacks_Hackathon_V3\\FoodSaverApp\\FoodSaverApp\\FoodSaverApp.csproj",
         "projectName": "FoodSaverApp",
-        "projectPath": "C:\\Users\\edboa\\Source\\Repos\\Semester 3 Repos\\GDSC\\CondorHacks\\CondorHacksProject\\FoodSaver\\FoodSaverApp\\FoodSaverApp\\FoodSaverApp.csproj",
-        "packagesPath": "C:\\Users\\edboa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edboa\\Source\\Repos\\Semester 3 Repos\\GDSC\\CondorHacks\\CondorHacksProject\\FoodSaver\\FoodSaverApp\\FoodSaverApp\\obj\\",
+        "projectPath": "C:\\Users\\Gavin Abeele\\Source\\Repos\\CondorHacks_Hackathon_V3\\FoodSaverApp\\FoodSaverApp\\FoodSaverApp.csproj",
+        "packagesPath": "C:\\Users\\Gavin Abeele\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gavin Abeele\\Source\\Repos\\CondorHacks_Hackathon_V3\\FoodSaverApp\\FoodSaverApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\edboa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gavin Abeele\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -46,6 +46,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.6, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -71,7 +75,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

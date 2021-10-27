@@ -4,8 +4,19 @@ namespace FoodSaverApp.Models
 {
     public class Item
     {
-        public string Id { get; set; }
-        public string Text { get; set; }
-        public string Description { get; set; }
+
+        public int id { get; set; }
+        public string name { get; set; }
+        public string expDate { get; set; }
+
+
+        public Item(int id, string name, string expDate)
+        {
+            this.id = id;
+            this.name = name;
+            this.expDate = expDate;
+
+
+        }
     }
 }

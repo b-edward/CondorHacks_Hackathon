@@ -13,7 +13,7 @@ namespace FoodSaver.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            Window.SetStatusBarColor(Android.Graphics.Color.Argb(0, 15, 157, 88));
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

@@ -14,12 +14,16 @@ namespace FoodSaver.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Bread", Description="November 1" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Milk", Description="October 31" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Cheese", Description="November 3" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Chicken", Description="October 30" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Yogourt", Description="November 4" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Eggs", Description="November 7" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Chips", Description="December 7" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Pickles", Description="December 31" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Kimchi", Description="January 27" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Butter", Description="November 17" },
             };
         }
 

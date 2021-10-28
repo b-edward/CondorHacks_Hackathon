@@ -35,16 +35,18 @@ namespace FoodSaver.ViewModels
             set
             {
                 itemId = value;
+                // Get the item data from db
                 LoadItemId(value);
             }
         }
-            
+
+        // Load the item
         public async void LoadItemId(string itemId)
         {
             try
             {
-                var item = await DataStore.GetItemAsync(itemId);
-                Id = item.Id;
+                // Find the item in the db and assign it to properties
+                var item = await db.GetItem(itemId);
                 Food = item.Food;
                 ExpirationDate = item.ExpirationDate;
             }

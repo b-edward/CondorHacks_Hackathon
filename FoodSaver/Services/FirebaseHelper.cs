@@ -10,12 +10,15 @@ namespace FoodSaver.Services
 {
     public class FirebaseHelper
     {
-        private readonly string ChildName = "Items";
+        private readonly string ChildName = "Items";    // String to match category in realtime database
 
+        // instantiate the connection to Google Firebase
         FirebaseClient firebase = new FirebaseClient("https://foodsaver-3798c-default-rtdb.firebaseio.com/");
 
+        // Read all of the items in the db
         public async Task<List<Item>> GetAllItems()
         {
+            // Put the items in a list and return it
             return (await firebase
                 .Child(ChildName)
                 .OnceAsync<Item>()).Select(item => new Item
@@ -26,14 +29,7 @@ namespace FoodSaver.Services
                 }).ToList();
         }
 
-        //public async Task AddItem(string food, string expiration)
-        //{
-        //    var rand = new Random();
-        //    await firebase
-        //        .Child(ChildName)
-        //        .PostAsync(new Item() { Id = "TEMP", Food = food, ExpirationDate = expiration });
-        //}
-
+        // Create a new item in the database
         public async Task AddItem(Item newItem)
         {            
             await firebase
@@ -41,6 +37,7 @@ namespace FoodSaver.Services
                 .PostAsync(new Item() { Id = newItem.Id, Food = newItem.Food, ExpirationDate = newItem.ExpirationDate });
         }
 
+        // Read a single item from the database
         public async Task<Item> GetItem(string id)
         {
             var allItems = await GetAllItems();
@@ -50,6 +47,7 @@ namespace FoodSaver.Services
             return allItems.FirstOrDefault(a => a.Id == id);
         }
 
+        // Use below method as base to search by date/time?
         //public async Task<Item> GetItem(string food)
         //{
         //    var allItems = await GetAllItems();
@@ -59,23 +57,29 @@ namespace FoodSaver.Services
         //    return allItems.FirstOrDefault(a => a.Food == food);
         //}
 
+        // Update an item in the database
         public async Task UpdateItem(string id, string food, string expiry)
         {
+            // Find the item in the database
             var toUpdateItem = (await firebase
                 .Child(ChildName)
                 .OnceAsync<Item>()).FirstOrDefault(a => a.Object.Id == id);
 
+            // Update the item in the database
             await firebase
                 .Child(ChildName)
                 .Child(toUpdateItem.Key)
                 .PutAsync(new Item() { Id = id, Food = food, ExpirationDate = expiry });
         }
 
+        // Delete an item from the database
         public async Task DeleteItem(string id)
         {
+            // Find the item
             var toDeleteItem = (await firebase
                 .Child(ChildName)
                 .OnceAsync<Item>()).FirstOrDefault(a => a.Object.Id == id);
+            // Delete the item
             await firebase.Child(ChildName).Child(toDeleteItem.Key).DeleteAsync();
         }
     }

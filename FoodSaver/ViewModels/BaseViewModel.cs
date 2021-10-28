@@ -12,8 +12,9 @@ namespace FoodSaver.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        //public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
 
+        // Instantiate an object to interact with Firebase
         public FirebaseHelper db = new FirebaseHelper();
 
         bool isBusy = false;

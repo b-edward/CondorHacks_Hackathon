@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[4.0.6, )"
             },
+            "Xamarin.Android.Support.v4": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.0, )"

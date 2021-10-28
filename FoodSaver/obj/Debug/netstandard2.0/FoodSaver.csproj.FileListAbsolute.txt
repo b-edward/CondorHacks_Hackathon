@@ -17,3 +17,8 @@ C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver\bin\Debug\netstandard2.0\ref\FoodSaver.dll
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver\bin\Debug\netstandard2.0\FoodSaver.pdb
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver\obj\Debug\netstandard2.0\FoodSaver.csproj.AssemblyReference.cache
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver\obj\Debug\netstandard2.0\FoodSaver.csproj.CopyComplete

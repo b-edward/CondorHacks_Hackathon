@@ -272,15 +272,7 @@ C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\android\assets\Xamarin.Google.Android.Material.dll
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\android\assets\Xamarin.Google.Android.Material.pdb
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\android\assets\Xamarin.Google.Guava.ListenableFuture.dll
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\jl\40c15589-614c-4585-9bf9-7d88677d2aee.jar
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\stamp\_AndroidXJetifyJavaLibraryRules.stamp
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\032ac464-dd91-4a99-8a64-0b768e277322.txt
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\1cca04a5-0f8d-44dc-a3af-fe0f60a262ce.txt
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\370265dc-5fa5-49d1-bdf2-3bc4e3af4fae.txt
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\3eb607bd-6ce3-4ace-aeb9-849ec8c89895.cfg
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\cf5e40a3-61dc-4647-b3b9-72b29da38fcb.txt
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\d5e7c78e-92aa-4ece-b27e-c0c3425b91cb.txt
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\ef45d9da-cf90-4dbd-8bc7-4e04df8fb99e.txt
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\stamp\_AndroidXJetifyProguardRules.stamp
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\_AndroidXJetifyProguardRules.jetify
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\stamp\_AndroidXCecilfy.stamp
@@ -685,3 +677,11 @@ C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\jl\7d391cf5-103e-4f63-bd11-4c1492269402.jar
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\1fc821e1-cbb6-4735-bb4d-0b41ccaeae6e.txt
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\22f44ea3-65b8-4434-a952-e699222366da.txt
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\3c4ccf47-7b1c-46a9-83fa-f2b2d113a900.txt
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\4366381a-6163-453c-aa1b-e7f1b4e974bd.txt
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\605b886a-edfd-4db6-bb86-fc6d5af2bf71.cfg
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\728a5566-d142-4f90-8ec8-91562d8229ff.txt
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\CondorHacks\CondorHacksProject\FoodSaver\FoodSaver.Android\obj\Debug\110\androidx\proguard\ccc4ace9-62b2-40f1-b063-b40fde15c5d8.txt

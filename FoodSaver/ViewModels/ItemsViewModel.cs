@@ -1,5 +1,6 @@
 ﻿using FoodSaver.Models;
 using FoodSaver.Views;
+using FoodSaver.Services;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -17,6 +18,7 @@ namespace FoodSaver.ViewModels
         public Command AddItemCommand { get; }
         public Command<Item> ItemTapped { get; }
 
+
         public ItemsViewModel()
         {
             Title = "Browse";
@@ -26,6 +28,7 @@ namespace FoodSaver.ViewModels
             ItemTapped = new Command<Item>(OnItemSelected);
 
             AddItemCommand = new Command(OnAddItem);
+
         }
 
         async Task ExecuteLoadItemsCommand()
@@ -35,7 +38,8 @@ namespace FoodSaver.ViewModels
             try
             {
                 Items.Clear();
-                var items = await DataStore.GetItemsAsync(true);
+                //var items = await DataStore.GetItemsAsync(true);
+                var items = await db.GetAllItems();
                 foreach (var item in items)
                 {
                     Items.Add(item);

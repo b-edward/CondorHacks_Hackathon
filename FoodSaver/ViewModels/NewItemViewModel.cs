@@ -56,7 +56,8 @@ namespace FoodSaver.ViewModels
                 ExpirationDate = Description
             };
 
-            await DataStore.AddItemAsync(newItem);
+            //await DataStore.AddItemAsync(newItem);
+            await db.AddItem(newItem);
 
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");

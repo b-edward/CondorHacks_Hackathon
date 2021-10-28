@@ -14,6 +14,8 @@ namespace FoodSaver.ViewModels
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
 
+        public FirebaseHelper db = new FirebaseHelper();
+
         bool isBusy = false;
         public bool IsBusy
         {

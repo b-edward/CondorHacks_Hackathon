@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+    
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FoodSaver.Views.ItemDetailPage"
              Title="{Binding Title}">
+            
 
     <StackLayout Spacing="20" Padding="15">
         <Label Text="Food item:" FontSize="Large" FontAttributes="Bold" TextColor="DarkSlateGray"/>
-        <Label Text="{Binding Text}" FontSize="Large" TextColor="DarkSlateGray"/>
+        <Label Text="{Binding Food}" FontSize="Large" TextColor="DarkSlateGray"/>
         <Label Text="Eat by:" FontSize="Large" FontAttributes="Bold" TextColor="DarkSlateGray" />
-        <Label Text="{Binding Description}" FontSize="Large" TextColor="DarkSlateGray"/>
+        <Label Text="{Binding ExpirationDate}" FontSize="Large" TextColor="DarkSlateGray"/>
     </StackLayout>
     
 </ContentPage>

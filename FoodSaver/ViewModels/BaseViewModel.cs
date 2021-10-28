@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms;
+using Firebase.Database;
+using Firebase.Database.Query;
 
 namespace FoodSaver.ViewModels
 {

@@ -10,20 +10,20 @@ namespace FoodSaver.ViewModels
     public class ItemDetailViewModel : BaseViewModel
     {
         private string itemId;
-        private string text;
-        private string description;
+        private string food;
+        private string expirationDate;
         public string Id { get; set; }
 
-        public string Text
+        public string Food
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => food;
+            set => SetProperty(ref food, value);
         }
 
-        public string Description
+        public string ExpirationDate
         {
-            get => description;
-            set => SetProperty(ref description, value);
+            get => expirationDate;
+            set => SetProperty(ref expirationDate, value);
         }
 
         public string ItemId
@@ -35,23 +35,23 @@ namespace FoodSaver.ViewModels
             set
             {
                 itemId = value;
-                //LoadItemId(value);
+                LoadItemId(value);
             }
         }
-
-        //public async void LoadItemId(string itemId)
-        //{
-        //    try
-        //    {
-        //        var item = await DataStore.GetItemAsync(itemId);
-        //        ItemId = item.ItemId;
-        //        Text = item.Text;
-        //        Description = item.Description;
-        //    }
-        //    catch (Exception)
-        //    {
-        //        Debug.WriteLine("Failed to Load Item");
-        //    }
-        //}
+            
+        public async void LoadItemId(string itemId)
+        {
+            try
+            {
+                var item = await DataStore.GetItemAsync(itemId);
+                Id = item.Id;
+                Food = item.Food;
+                ExpirationDate = item.ExpirationDate;
+            }
+            catch (Exception)
+            {
+                Debug.WriteLine("Failed to Load Item");
+            }
+        }
     }
 }

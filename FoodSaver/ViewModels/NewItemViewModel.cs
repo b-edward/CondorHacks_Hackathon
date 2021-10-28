@@ -51,7 +51,7 @@ namespace FoodSaver.ViewModels
         {
             Item newItem = new Item()
             {
-                ItemId = Guid.NewGuid(),
+                Id = Guid.NewGuid().ToString(),
                 Food = Text,
                 ExpirationDate = Description
             };

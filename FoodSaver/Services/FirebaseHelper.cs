@@ -47,16 +47,6 @@ namespace FoodSaver.Services
             return allItems.FirstOrDefault(a => a.Id == id);
         }
 
-        // Use below method as base to search by date/time?
-        //public async Task<Item> GetItem(string food)
-        //{
-        //    var allItems = await GetAllItems();
-        //    await firebase
-        //        .Child(ChildName)
-        //        .OnceAsync<Item>();
-        //    return allItems.FirstOrDefault(a => a.Food == food);
-        //}
-
         // Update an item in the database
         public async Task UpdateItem(string id, string food, string expiry)
         {
@@ -71,6 +61,9 @@ namespace FoodSaver.Services
                 .Child(toUpdateItem.Key)
                 .PutAsync(new Item() { Id = id, Food = food, ExpirationDate = expiry });
         }
+
+        // Once we have date/time set up, call delete method for that item?
+        // Allow checking off items as eaten, then delete from db?
 
         // Delete an item from the database
         public async Task DeleteItem(string id)

@@ -30,7 +30,8 @@
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="30,0,30,24" Spacing="10">
                 <Label HorizontalTextAlignment="Center" Text="Welcome to Food Saver!" FontSize="Title" TextColor="#4285F4" FontAttributes="Bold"/>
-                <Label Text="Let's reduce our food waste by tracking what we have in our kitchen and eating it before it expires!" HorizontalTextAlignment="Center" TextColor="#4285F4" FontSize="20" Padding="0,0,0,0"/>
+                <Label Text="You can reduce your food waste by tracking what's in the kitchen and eating it before it expires.
+                       Save that food!" HorizontalTextAlignment="Center" TextColor="#4285F4" FontSize="20" Padding="0,0,0,0" FontAttributes="Bold"/>
             </StackLayout>
         </ScrollView>
     </Grid>

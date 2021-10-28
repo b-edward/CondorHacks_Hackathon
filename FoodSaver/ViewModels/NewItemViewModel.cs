@@ -51,9 +51,9 @@ namespace FoodSaver.ViewModels
         {
             Item newItem = new Item()
             {
-                Id = Guid.NewGuid().ToString(),
-                Text = Text,
-                Description = Description
+                ItemId = Guid.NewGuid(),
+                Food = Text,
+                ExpirationDate = Description
             };
 
             await DataStore.AddItemAsync(newItem);

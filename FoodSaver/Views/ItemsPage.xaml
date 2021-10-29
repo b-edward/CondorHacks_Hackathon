@@ -8,16 +8,39 @@
              x:Name="BrowseItemsPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add item" Command="{Binding AddItemCommand}" />
+        <ToolbarItem Text="+ Add item" Command="{Binding AddItemCommand}" />
     </ContentPage.ToolbarItems>
     <!--
       x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
       https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
     -->
     <RefreshView x:DataType="local:ItemsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
-        <CollectionView x:Name="ItemsListView"
-                ItemsSource="{Binding Items}"
-                SelectionMode="None">
+        
+        <CollectionView x:Name="ItemsListView" ItemsSource="{Binding Items}" SelectionMode="None">
+
+            <CollectionView.EmptyView > <!--Should not display when items are in the list.--> 
+                <StackLayout Padding="10,50,10,0" BackgroundColor="White" >
+                    <Label Text="Don't leave food behind!" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                    <Image Source="DontleaveFoodBehind.png" HeightRequest="200" HorizontalOptions="CenterAndExpand"/>
+                    
+                    <Grid HorizontalOptions="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" Text="Tap " FontSize="Medium" TextColor="Black" />
+                        <Label Grid.Row="0" Grid.Column="1" Text="+ Add Item" FontSize="Medium" TextDecorations="Underline" TextColor="Black" />
+                        <Label Grid.Row="0" Grid.Column="2" Text= " to add your items." FontSize="Medium" TextColor="Black"/>
+                        
+                    </Grid>
+
+                </StackLayout> 
+            </CollectionView.EmptyView>
+            
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10" x:DataType="model:Item">

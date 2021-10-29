@@ -7,8 +7,41 @@
              x:Class="FoodSaver.Views.LoginPage"
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+        <StackLayout Padding="10,50,10,0" BackgroundColor="White">
+            
+            <Label Text="Food Saver" FontSize="Title" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#0F9D58"/>
+            <Label Text="A Brilliant App for Managing Food" FontSize="Subtitle" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Gray"/>
+            
+            <Image Source="GetCooking.png" HeightRequest="250" />
+            
+            <Entry x:Name="Username" Text=" {Binding Username}" Placeholder="Username" PlaceholderColor="LightSlateGray" HeightRequest="40" Keyboard="Text" TextColor="Black"/>
+            <Entry x:Name="Password" Text=" {Binding Password}" Placeholder="Password" PlaceholderColor="LightSlateGray" HeightRequest="40" IsPassword="True" TextColor="Black"/>
+            <Button VerticalOptions="Center" Text="Login" Clicked="LoginButton_Clicked" BackgroundColor="#0F9D58" Padding="10,0,10,0"/>
+
+            <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Remeber my login" TextColor="Gray" HorizontalOptions="Center"/>
+                <Switch Grid.Row="0" Grid.Column="1"  x:Name="RememberMe" HorizontalOptions="Center" />
+            </Grid> 
+            
+            
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Don't have an account? " TextColor="Gray"/>
+                        <Span Text="Register" TextColor="Gray" FontAttributes="Bold" TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="RegisterTappedGesture"/>
+                </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

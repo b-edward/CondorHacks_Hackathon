@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FoodSaver.Views.AboutPage"
              xmlns:vm="clr-namespace:FoodSaver.ViewModels"
-             Title="Food Saver">
+             Title="Home">
     
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
@@ -14,26 +14,25 @@
             <Color x:Key="Accent">#96d1ff</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Label HorizontalTextAlignment="Center" Text="Welcome to Food Saver!" FontSize="27" TextColor="#035A85" FontAttributes="Bold" Margin="0,25,0,0"/>
+            
+            <Image Source="DogWait.png" VerticalOptions="Center" HeightRequest="275" />
+            <Label HorizontalTextAlignment="Center" Text="Make Delicious Meals!" FontSize="20" TextColor="#035A85" FontAttributes="Bold"/>
+            <Label Text="Get inspired by viewing everything in your kitchen." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="0, 0, 0, 10" />
+            
+            <Image Source="SaveMoney.png" VerticalOptions="Center" HeightRequest="300" />
+            <Label HorizontalTextAlignment="Center" Text="Save Money!" FontSize="20" TextColor="#035A85" FontAttributes="Bold"/>
+            <Label Text="Using food before it turns bad will help save you money." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="0, 0, 0, 10" />
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="white" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,20,0,0" VerticalOptions="FillAndExpand">
-                    <Image Source="kitchen.png" VerticalOptions="Center" HeightRequest="300" />
-                </ContentView>
-            </StackLayout>
-        </StackLayout>
-        <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,0,30,24" Spacing="10">
-                <Label HorizontalTextAlignment="Center" Text="Welcome to Food Saver!" FontSize="Title" TextColor="#4285F4" FontAttributes="Bold"/>
-                <Label Text="You can reduce your food waste by tracking what's in the kitchen and eating it before it expires.
-                       Save that food!" HorizontalTextAlignment="Center" TextColor="#4285F4" FontSize="20" Padding="0,0,0,0" FontAttributes="Bold"/>
-            </StackLayout>
-        </ScrollView>
-    </Grid>
+            <Image Source="BreakfastMeal.png" VerticalOptions="Center" HeightRequest="300" />
+            <Label HorizontalTextAlignment="Center" Text="Reduce Waste!" FontSize="20" TextColor="#035A85" FontAttributes="Bold"/>
+            <Label Text="You can reduce food waste by tracking what's in the kitchen and using it before it expires." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="0, 0, 0, 10"  />
+
+        </StackLayout >
+    </ScrollView>
+
+
 
 </ContentPage>

@@ -13,7 +13,9 @@
         <Label Text="{Binding ExpirationDate}" FontSize="Large" TextColor="DarkSlateGray"/>
         
         <!--Delete food from db when item has been eaten-->
-        <Button Text="Finished" Command="{Binding DeleteCommand}" HorizontalOptions="FillAndExpand"/>        
+        <Button Text="Eaten" Command="{Binding DeleteCommand}"  HorizontalOptions="FillAndExpand"/>
+        <!--Delete food from db when item has been eaten; Could include other functionality later on.-->
+        <Button Text="Expired" Command="{Binding DeleteCommand}" BackgroundColor="Red" HorizontalOptions="FillAndExpand"/>
     </StackLayout>
     
 </ContentPage>

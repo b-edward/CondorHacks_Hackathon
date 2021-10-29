@@ -13,13 +13,33 @@ namespace FoodSaver.Views
     public partial class LoginPage : ContentPage
     {
 
-        private string username;
-        private string password;    //Notsure on where these should go. Should it be with the login command?
-
         public LoginPage()
         {
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
         }
+
+        private void LoginButton_Clicked(object sender, EventArgs e)
+        {
+            string usernameCred = "Admin";
+            string passwordCred = "Admin";
+
+            if(Username.Text == usernameCred && Password.Text == passwordCred)
+            {
+                Application.Current.MainPage = new AppShell();
+            }
+            else
+            {
+                DisplayAlert("Looks like there is an error","Username or password is incorrect", "Ok");
+            }
+        }
+
+        private void RegisterTappedGesture(object sender, EventArgs e)
+        {
+            DisplayAlert("Registation Placeholder", "Username = Admin Password = Admin", "Ok");
+        }
+
+
+
     }
 }

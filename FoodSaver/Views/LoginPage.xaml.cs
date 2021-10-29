@@ -13,8 +13,8 @@ namespace FoodSaver.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
-        private  string usernameCred = "Admin";  //Hardcoded credientals 
-        private string passwordCred = "Admin";
+        private  string usernameCred = "GDSC";  //Hardcoded credientals 
+        private string passwordCred = "Hackathon";
 
         public LoginPage()
         {

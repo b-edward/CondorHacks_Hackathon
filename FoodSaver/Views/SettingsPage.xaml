@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodSaver.Views.Settings">
+    <ContentPage.Content>
+        <StackLayout Padding="10,50,10,0" >
+
+            <Label Text="Settings" FontSize="Title" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#0F9D58"/>
+            
+
+            <Button VerticalOptions="Center" Text="Logout" Clicked="LogoutButton_Clicked" BackgroundColor="#0F9D58" Padding="10,0,10,0"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

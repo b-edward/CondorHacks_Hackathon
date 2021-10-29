@@ -12,6 +12,10 @@ namespace FoodSaver.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+
+        private string username;
+        private string password;    //Notsure on where these should go. Should it be with the login command?
+
         public LoginPage()
         {
             InitializeComponent();

@@ -18,17 +18,21 @@
         <StackLayout Orientation="Vertical">
             <Label HorizontalTextAlignment="Center" Text="Welcome to Food Saver!" FontSize="27" TextColor="#035A85" FontAttributes="Bold" Margin="0,25,0,0"/>
             
+            <Image Source="BreakfastMeal.png" VerticalOptions="Center" HeightRequest="300" />
+            <Label HorizontalTextAlignment="Center" Text="Reduce Waste!" FontSize="20" TextColor="#035A85" FontAttributes="Bold"/>
+            <Label Text="You can reduce food waste by tracking what's in the kitchen and using it before it expires." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10"  />
+            
             <Image Source="DogWait.png" VerticalOptions="Center" HeightRequest="275" />
             <Label HorizontalTextAlignment="Center" Text="Make Delicious Meals!" FontSize="20" TextColor="#035A85" FontAttributes="Bold"/>
-            <Label Text="Get inspired by viewing everything in your kitchen." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="0, 0, 0, 10" />
+            <Label Text="Get inspired by viewing everything in your kitchen." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
             
             <Image Source="SaveMoney.png" VerticalOptions="Center" HeightRequest="300" />
             <Label HorizontalTextAlignment="Center" Text="Save Money!" FontSize="20" TextColor="#035A85" FontAttributes="Bold"/>
-            <Label Text="Using food before it turns bad will help save you money." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="0, 0, 0, 10" />
+            <Label Text="Using food before it turns bad will help save you money." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="20, 0, 20, 30" />
 
-            <Image Source="BreakfastMeal.png" VerticalOptions="Center" HeightRequest="300" />
-            <Label HorizontalTextAlignment="Center" Text="Reduce Waste!" FontSize="20" TextColor="#035A85" FontAttributes="Bold"/>
-            <Label Text="You can reduce food waste by tracking what's in the kitchen and using it before it expires." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="0, 0, 0, 10"  />
+            <Image Source="UNFoodGoals.png" VerticalOptions="Center" HeightRequest="175"/>
+            <Label HorizontalTextAlignment="Center" Text="Support the World!" FontSize="20" TextColor="#035A85" FontAttributes="Bold" />
+            <Label Text="Help shape our future by supporting the United Nations food goals." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
 
         </StackLayout >
     </ScrollView>

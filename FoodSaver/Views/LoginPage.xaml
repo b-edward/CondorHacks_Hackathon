@@ -16,7 +16,7 @@
             
             <Entry x:Name="Username" Text=" {Binding Username}" Placeholder="Username" PlaceholderColor="LightSlateGray" HeightRequest="40" Keyboard="Text" TextColor="Black"/>
             <Entry x:Name="Password" Text=" {Binding Password}" Placeholder="Password" PlaceholderColor="LightSlateGray" HeightRequest="40" IsPassword="True" TextColor="Black"/>
-            <Button VerticalOptions="Center" Text="Login" Clicked="LoginButton_Clicked" BackgroundColor="#0F9D58" Padding="10,0,10,1"/>
+            <Button VerticalOptions="Center" Text="Login" Clicked="LoginButton_Clicked" BackgroundColor="#0F9D58" Padding="10,0,10,0"/>
             
             <Label HorizontalOptions="Center">
                 <Label.FormattedText>

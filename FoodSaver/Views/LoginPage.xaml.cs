@@ -21,22 +21,28 @@ namespace FoodSaver.Views
 
         private void LoginButton_Clicked(object sender, EventArgs e)
         {
-            string usernameCred = "Admin";
+            string usernameCred = "Admin";  //Hardcoded credientals 
             string passwordCred = "Admin";
 
-            if(Username.Text == usernameCred && Password.Text == passwordCred)
+
+            if(Username.Text == null || Password.Text == null)
+            {
+                DisplayAlert("Looks like there is an error.","Please enter in username and password", "Let me try again");
+            }
+            else if(Username.Text.ToUpper() == usernameCred.ToUpper() && Password.Text == passwordCred)
             {
                 Application.Current.MainPage = new AppShell();
             }
-            else
+            else 
             {
-                DisplayAlert("Looks like there is an error","Username or password is incorrect", "Ok");
+                DisplayAlert("Looks like there is an error.", "Incorrect username or password", "I will try again");
             }
+
         }
 
         private void RegisterTappedGesture(object sender, EventArgs e)
         {
-            DisplayAlert("Registation Placeholder", "Username = Admin Password = Admin", "Ok");
+            DisplayAlert("Registation Placeholder", "Username = Admin\nPassword = Admin", "Let's go!");
         }
 
 

@@ -9,6 +9,20 @@
         The overall app visual hierarchy is defined here, along with navigation.
     
         https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
+    
+    Google Green 0F9D58
+    
+    
+    Palette Colours 
+    
+    Light Green 8BB166
+    Red FF0000
+    Honey Yellow FFB300
+    Maximum Green 53881b
+    White FFFCFC
+    Vibrant Blue 00ADDF
+    Dark Blue  035A85
+    
     -->
 
     <Shell.Resources>

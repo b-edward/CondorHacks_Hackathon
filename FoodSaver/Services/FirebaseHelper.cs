@@ -34,7 +34,7 @@ namespace FoodSaver.Services
         {            
             await firebase
                 .Child(ChildName)
-                .PostAsync(new Item() { Id = newItem.Id, Food = newItem.Food, ExpirationDate = newItem.ExpirationDate });
+                .PostAsync(new Item() { Id = newItem.Id, Food = newItem.Food, ExpirationDate = newItem.ExpirationDate, ExpirationTime = newItem.ExpirationTime });
         }
 
         // Read a single item from the database

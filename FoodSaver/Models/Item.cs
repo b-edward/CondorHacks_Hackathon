@@ -7,5 +7,6 @@ namespace FoodSaver.Models
         public string Id { get; set; }
         public string Food { get; set; }
         public string ExpirationDate { get; set; }
+        public string ExpirationTime { get; set; }
     }
 }

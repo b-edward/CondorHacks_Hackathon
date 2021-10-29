@@ -9,8 +9,9 @@ namespace FoodSaver.ViewModels
 {
     public class NewItemViewModel : BaseViewModel
     {
-        private string text;
-        private string description;
+        private string food;
+        private string expirationDate;
+        private string expirationTime;
 
         public NewItemViewModel()
         {
@@ -22,20 +23,26 @@ namespace FoodSaver.ViewModels
 
         private bool ValidateSave()
         {
-            return !String.IsNullOrWhiteSpace(text)
-                && !String.IsNullOrWhiteSpace(description);
+            return !String.IsNullOrWhiteSpace(food)
+                && !String.IsNullOrWhiteSpace(expirationDate);
         }
 
-        public string Text
+        public string Food
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => food;
+            set => SetProperty(ref food, value);
         }
 
-        public string Description
+        public string ExpirationDate
         {
-            get => description;
-            set => SetProperty(ref description, value);
+            get => expirationDate;
+            set => SetProperty(ref expirationDate, value.ToString());
+        }
+
+        public string ExpirationTime
+        {
+            get => expirationTime;
+            set => SetProperty(ref expirationTime, value.ToString());
         }
 
         public Command SaveCommand { get; }
@@ -52,8 +59,9 @@ namespace FoodSaver.ViewModels
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Food = Text,
-                ExpirationDate = Description
+                Food = this.Food,
+                ExpirationDate = this.ExpirationDate,
+                ExpirationTime = this.ExpirationTime
             };
 
             //await DataStore.AddItemAsync(newItem);

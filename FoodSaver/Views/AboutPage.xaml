@@ -16,7 +16,7 @@
     </ContentPage.Resources>
     <ScrollView>
         <StackLayout Orientation="Vertical">
-            <Image Source="foodSAVER.png" VerticalOptions="Center" HeightRequest="600" />
+            <Image Source="FoodSaverLanding.png" VerticalOptions="Center" HeightRequest="550" />
 
             <Image Source="BreakfastMeal.png" VerticalOptions="Center" HeightRequest="300" />
             <Label HorizontalTextAlignment="Center" Text="Reduce Waste!" FontSize="20" TextColor="#035A85" FontAttributes="Bold"/>

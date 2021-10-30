@@ -11,7 +11,7 @@
         <Label Text="{Binding Food}" FontSize="Large" TextColor="DarkSlateGray"/>
         <Label Text="Eat by:" FontSize="Large" FontAttributes="Bold" TextColor="DarkSlateGray" />
         <Label Text="{Binding ExpirationDate}" FontSize="Large" TextColor="DarkSlateGray"/>
-        
+        <Label Text="{Binding ExpirationTime}" FontSize="Large" TextColor="DarkSlateGray"/>
         <!--Delete food from db when item has been eaten-->
         <Button Text="Eaten" Command="{Binding DeleteCommand}"  HorizontalOptions="FillAndExpand"/>
         <!--Delete food from db when item has been eaten; Could include other functionality later on.-->

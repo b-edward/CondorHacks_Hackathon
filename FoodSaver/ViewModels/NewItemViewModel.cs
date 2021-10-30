@@ -10,8 +10,8 @@ namespace FoodSaver.ViewModels
     public class NewItemViewModel : BaseViewModel
     {
         private string food;
-        private string expirationDate;
-        private string expirationTime;
+        private DateTime expirationDate;
+        private TimeSpan expirationTime;
 
         public NewItemViewModel()
         {
@@ -24,7 +24,8 @@ namespace FoodSaver.ViewModels
         private bool ValidateSave()
         {
             return !String.IsNullOrWhiteSpace(food)
-                && !String.IsNullOrWhiteSpace(expirationDate);
+                && !(expirationDate == null)
+                && !(expirationTime == null);
         }
 
         public string Food
@@ -33,16 +34,26 @@ namespace FoodSaver.ViewModels
             set => SetProperty(ref food, value);
         }
 
-        public string ExpirationDate
+        public DateTime ExpirationDate
         {
-            get => expirationDate;
-            set => SetProperty(ref expirationDate, value.ToString());
+            get
+            {
+                // Set default value
+                if(String.IsNullOrWhiteSpace(food))
+                {
+                    DateTime today = DateTime.Today;
+                    expirationDate = today;
+                }
+
+                return expirationDate;
+            }
+            set => expirationDate = value;
         }
 
-        public string ExpirationTime
+        public TimeSpan ExpirationTime
         {
             get => expirationTime;
-            set => SetProperty(ref expirationTime, value.ToString());
+            set => expirationTime = value;
         }
 
         public Command SaveCommand { get; }
@@ -56,12 +67,31 @@ namespace FoodSaver.ViewModels
 
         private async void OnSave()
         {
+            //string tempDate = this.ExpirationDate.ToLongDateString();
+            //string[] dateArray = new string[10];
+            //dateArray = tempDate.Split(',', ' ');
+
+            string tempTime = this.ExpirationTime.ToString();
+            string[] timeArray = new string[10];
+            timeArray = tempTime.Split(':');
+            int hour = int.Parse(timeArray[0]);
+            string amPm = "AM";
+
+            if(hour > 12)
+            {
+                hour = hour - 12;
+                timeArray[0] = hour.ToString();
+                amPm = "PM";
+            }
+
+            tempTime = timeArray[0] + ":" + timeArray[1] + " " + amPm;
+
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
                 Food = this.Food,
-                ExpirationDate = this.ExpirationDate,
-                ExpirationTime = this.ExpirationTime
+                ExpirationDate = this.ExpirationDate.ToLongDateString(),
+                ExpirationTime = tempTime
             };
 
             //await DataStore.AddItemAsync(newItem);

@@ -25,7 +25,8 @@ namespace FoodSaver.Services
                 {
                     Id = item.Object.Id,
                     Food = item.Object.Food,
-                    ExpirationDate = item.Object.ExpirationDate
+                    ExpirationDate = item.Object.ExpirationDate,
+                    ExpirationTime = item.Object.ExpirationTime
                 }).ToList();
         }
 
@@ -48,7 +49,7 @@ namespace FoodSaver.Services
         }
 
         // Update an item in the database
-        public async Task UpdateItem(string id, string food, string expiry)
+        public async Task UpdateItem(string id, string food, string date, string time)
         {
             // Find the item in the database
             var toUpdateItem = (await firebase
@@ -59,7 +60,7 @@ namespace FoodSaver.Services
             await firebase
                 .Child(ChildName)
                 .Child(toUpdateItem.Key)
-                .PutAsync(new Item() { Id = id, Food = food, ExpirationDate = expiry });
+                .PutAsync(new Item() { Id = id, Food = food, ExpirationDate = date, ExpirationTime = time });
         }
 
         // Once we have date/time set up, call delete method for that item?

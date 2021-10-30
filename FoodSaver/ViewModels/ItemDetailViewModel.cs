@@ -13,6 +13,7 @@ namespace FoodSaver.ViewModels
         private string itemId;
         private string food;
         private string expirationDate;
+        private string expirationTime;
         public string Id { get; set; }
     
         public ItemDetailViewModel()
@@ -31,6 +32,12 @@ namespace FoodSaver.ViewModels
         {
             get => expirationDate;
             set => SetProperty(ref expirationDate, value);
+        }
+
+        public string ExpirationTime
+        {
+            get => expirationTime;
+            set => SetProperty(ref expirationTime, value);
         }
 
         public string ItemId
@@ -56,7 +63,8 @@ namespace FoodSaver.ViewModels
                 var item = await db.GetItem(itemId);
                 Food = item.Food;
                 ExpirationDate = item.ExpirationDate;
-            }
+                ExpirationTime = item.ExpirationTime;
+    }
             catch (Exception)
             {
                 Debug.WriteLine("Failed to Load Item");

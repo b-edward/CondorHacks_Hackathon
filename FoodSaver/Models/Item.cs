@@ -9,4 +9,5 @@ namespace FoodSaver.Models
         public string ExpirationDate { get; set; }
         public string ExpirationTime { get; set; }
     }
-}
+}               
+  

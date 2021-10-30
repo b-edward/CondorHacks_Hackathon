@@ -26,7 +26,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" Text="Remeber my login" TextColor="Gray" HorizontalOptions="Center"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="Remember my login" TextColor="Gray" HorizontalOptions="Center"/>
                 <Switch Grid.Row="0" Grid.Column="1"  x:Name="RememberMe" HorizontalOptions="Center" />
             </Grid> 
             

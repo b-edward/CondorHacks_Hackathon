@@ -15,10 +15,12 @@ namespace FoodSaver.ViewModels
 
         public NewItemViewModel()
         {
+
             SaveCommand = new Command(OnSave, ValidateSave);
             CancelCommand = new Command(OnCancel);
             this.PropertyChanged +=
                 (_, __) => SaveCommand.ChangeCanExecute();
+            
         }
 
         private bool ValidateSave()

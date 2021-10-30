@@ -13,7 +13,7 @@ namespace FoodSaver.Services
         private readonly string ChildName = "Items";    // String to match category in realtime database
 
         // instantiate the connection to Google Firebase
-        FirebaseClient firebase = new FirebaseClient("https://foodsaver-3798c-default-rtdb.firebaseio.com/");
+        FirebaseClient firebase = new FirebaseClient("https://hackathon-foodsaver-6ead9-default-rtdb.firebaseio.com/");
 
         // Read all of the items in the db
         public async Task<List<Item>> GetAllItems()

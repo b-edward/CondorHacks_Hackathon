@@ -9,11 +9,11 @@
     <StackLayout Spacing="20" Padding="15">
         <Label Text="Food item:" FontSize="Large" FontAttributes="Bold" TextColor="DarkSlateGray"/>
         <Label Text="{Binding Food}" FontSize="Large" TextColor="DarkSlateGray"/>
-        <Label Text="Eat by:" FontSize="Large" FontAttributes="Bold" TextColor="DarkSlateGray" />
+        <Label Text="Consume by:" FontSize="Large" FontAttributes="Bold" TextColor="DarkSlateGray" />
         <Label Text="{Binding ExpirationDate}" FontSize="Large" TextColor="DarkSlateGray"/>
         <Label Text="{Binding ExpirationTime}" FontSize="Large" TextColor="DarkSlateGray"/>
         <!--Delete food from db when item has been eaten-->
-        <Button Text="Eaten" Command="{Binding DeleteCommand}"  HorizontalOptions="FillAndExpand"/>
+        <Button Text="Finished" Command="{Binding DeleteCommand}"  HorizontalOptions="FillAndExpand"/>
         <!--Delete food from db when item has been eaten; Could include other functionality later on.-->
         <Button Text="Expired" Command="{Binding DeleteCommand}" BackgroundColor="Red" HorizontalOptions="FillAndExpand"/>
     </StackLayout>

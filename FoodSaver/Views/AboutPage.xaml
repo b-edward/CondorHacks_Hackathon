@@ -31,8 +31,8 @@
             <Label Text="Using food before it turns bad will help save you money." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="20, 0, 20, 30" />
 
             <Image Source="UNFoodGoals.png" VerticalOptions="Center" HeightRequest="175"/>
-            <Label HorizontalTextAlignment="Center" Text="Support the World!" FontSize="20" TextColor="#035A85" FontAttributes="Bold" />
-            <Label Text="Help shape our future by supporting the United Nations food goals." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
+            <Label HorizontalTextAlignment="Center" Text="Support the UN Sustainable Development Goals!" FontSize="20" TextColor="#035A85" FontAttributes="Bold" />
+            <Label Text="Fight food waste by eating the food you buy." HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
 
         </StackLayout >
     </ScrollView>

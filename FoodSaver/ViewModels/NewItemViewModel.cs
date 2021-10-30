@@ -1,4 +1,5 @@
 ﻿using FoodSaver.Models;
+using Plugin.LocalNotifications;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,6 +13,7 @@ namespace FoodSaver.ViewModels
         private string food;
         private DateTime expirationDate;
         private TimeSpan expirationTime;
+        DateTime today = DateTime.Today;
 
         public NewItemViewModel()
         {
@@ -43,7 +45,7 @@ namespace FoodSaver.ViewModels
                 // Set default value
                 if(String.IsNullOrWhiteSpace(food))
                 {
-                    DateTime today = DateTime.Today;
+                    
                     expirationDate = today;
                 }
 
@@ -96,6 +98,26 @@ namespace FoodSaver.ViewModels
 
             // Save the new item in the Firebase db
             await db.AddItem(newItem);
+
+            // Calculate minutes until expiration time
+            double minutes = 0.0;
+            double minutesNow = (double)DateTime.Now.Minute;
+            minutesNow += (double)DateTime.Now.Hour * 60;
+            minutes = ExpirationTime.TotalMinutes - minutesNow;
+
+            // Check if it expires on another day
+            double daysTillExpiry = 0.0;
+            if (ExpirationDate.ToShortDateString() != today.ToShortDateString())
+            {
+                double todayOA = today.ToOADate();
+                double expiryOA = ExpirationDate.ToOADate();
+                daysTillExpiry = expiryOA - todayOA;
+                minutes += daysTillExpiry * 1440;   // Add 1440 minutes for each day                                                   
+            }
+
+            // Schedule Notification
+            string msg = Food + " is expiring on " + ExpirationDate.ToLongDateString() + "\n! Be sure to finish this food!";
+            CrossLocalNotifications.Current.Show(Food, msg, 101, DateTime.Now.AddMinutes(minutes));
 
             // Go back to the Items page
             await Shell.Current.GoToAsync("..");

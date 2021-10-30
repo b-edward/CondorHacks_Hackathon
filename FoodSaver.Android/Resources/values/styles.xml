@@ -2,18 +2,24 @@
 <resources>
 
 
-	<!--Google Green 0F9D58
+	<!--
+	
+	====Fonts====
+	Headers Open Sans Semi Bold
+	Subtitles Nunito
 
-
-	Palette Colours
-
+	====Palette Colours====
+	
+	Google Green 0F9D58
 	Light Green 8BB166
 	Red FF0000
 	Honey Yellow FFB300
 	Maximum Green 53881b
 	White FFFCFC
 	Vibrant Blue 00ADDF
-	Dark Blue  035A85-->
+	Dark Blue  035A85
+	
+	-->
 
 	<style name="MainTheme" parent="MainTheme.Base">
 		<item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>

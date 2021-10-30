@@ -16542,7 +16542,7 @@ namespace FoodSaver.Droid
 			public const int DontLeaveFoodBehind = 2131165286;
 			
 			// aapt resource value: 0x7F070067
-			public const int foodSAVER = 2131165287;
+			public const int FoodSaverLanding = 2131165287;
 			
 			// aapt resource value: 0x7F070068
 			public const int fridge = 2131165288;

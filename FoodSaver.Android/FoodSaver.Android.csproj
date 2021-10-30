@@ -158,7 +158,6 @@
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
   </ItemGroup>
-	<AndroidResource Include="Resources\drawable\logo36.png" />
 	<AndroidResource Include="Resources\drawable\FoodSaverLanding.png" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

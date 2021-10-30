@@ -15,7 +15,7 @@
         <!--Delete food from db when item has been eaten-->
         <Button Text="Finished" Command="{Binding DeleteCommand}"  HorizontalOptions="FillAndExpand"/>
         <!--Delete food from db when item has been eaten; Could include other functionality later on.-->
-        <Button Text="Expired" Command="{Binding DeleteCommand}" BackgroundColor="Red" HorizontalOptions="FillAndExpand"/>
+        <Button Text="Expired" Command="{Binding DeleteCommand}" BackgroundColor="#DB4437" HorizontalOptions="FillAndExpand"/>
     </StackLayout>
     
 </ContentPage>

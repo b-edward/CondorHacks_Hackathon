@@ -63,9 +63,6 @@ namespace FoodSaver.Services
                 .PutAsync(new Item() { Id = id, Food = food, ExpirationDate = date, ExpirationTime = time });
         }
 
-        // Once we have date/time set up, call delete method for that item?
-        // Allow checking off items as eaten, then delete from db?
-
         // Delete an item from the database
         public async Task DeleteItem(string id)
         {

@@ -12,8 +12,5 @@ namespace FoodSaver.ViewModels
         {
             Title = "Settings";
         }
-
-
-
     }
 }

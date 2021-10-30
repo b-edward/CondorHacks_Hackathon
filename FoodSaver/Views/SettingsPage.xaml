@@ -6,8 +6,7 @@
                 
     <ContentPage.Content>
         <StackLayout Padding="10,50,10,0" Spacing="25" >
-            <Button VerticalOptions="Center" Text="Logout" Clicked="LogoutButton_Clicked" BackgroundColor="#FF0000" Padding="10,0,10,0"/>
-
+            <Button VerticalOptions="Center" Text="Logout" Clicked="LogoutButton_Clicked" BackgroundColor="#DB4437" Padding="10,0,10,0"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

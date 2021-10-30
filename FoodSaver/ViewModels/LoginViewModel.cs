@@ -18,8 +18,6 @@ namespace FoodSaver.ViewModels
         private async void OnLoginClicked()
         {
             Application.Current.MainPage = new AppShell();
-
-            //await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
         }
     }
 }

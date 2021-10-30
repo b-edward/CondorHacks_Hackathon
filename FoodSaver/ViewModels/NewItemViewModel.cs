@@ -63,16 +63,13 @@ namespace FoodSaver.ViewModels
 
         private async void OnCancel()
         {
-            // This will pop the current page off the navigation stack
+            // Pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");
         }
 
         private async void OnSave()
         {
-            //string tempDate = this.ExpirationDate.ToLongDateString();
-            //string[] dateArray = new string[10];
-            //dateArray = tempDate.Split(',', ' ');
-
+            // Parse the time and convert to useable string
             string tempTime = this.ExpirationTime.ToString();
             string[] timeArray = new string[10];
             timeArray = tempTime.Split(':');
@@ -88,6 +85,7 @@ namespace FoodSaver.ViewModels
 
             tempTime = timeArray[0] + ":" + timeArray[1] + " " + amPm;
 
+            // Store input in a new item object
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
@@ -96,10 +94,10 @@ namespace FoodSaver.ViewModels
                 ExpirationTime = tempTime
             };
 
-            //await DataStore.AddItemAsync(newItem);
+            // Save the new item in the Firebase db
             await db.AddItem(newItem);
 
-            // This will pop the current page off the navigation stack
+            // Go back to the Items page
             await Shell.Current.GoToAsync("..");
         }
     }

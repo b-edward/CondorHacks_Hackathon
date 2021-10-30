@@ -13,7 +13,7 @@ namespace FoodSaver.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
-        private  string usernameCred = "GDSC";  //Hardcoded credentials 
+        private  string usernameCred = "GDSC";  //Hardcoded credentials for testing
         private string passwordCred = "Hackathon";
 
         public LoginPage()
@@ -55,7 +55,7 @@ namespace FoodSaver.Views
 
         private void RegisterTappedGesture(object sender, EventArgs e)
         {
-            DisplayAlert("Registation Placeholder", "Username = Admin\nPassword = Admin", "Let's go!");
+            DisplayAlert("Registation Placeholder", "Please contact the administrator for login credentials", "OK");
         }
 
 

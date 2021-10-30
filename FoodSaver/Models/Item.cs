@@ -2,6 +2,9 @@
 
 namespace FoodSaver.Models
 {
+    /*
+     *      This class will track each food item
+     */
     public class Item
     {
         public string Id { get; set; }

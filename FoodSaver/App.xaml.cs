@@ -12,14 +12,11 @@ namespace FoodSaver
         public App()
         {
             InitializeComponent();
-
-            //DependencyService.Register<MockDataStore>();
             MainPage = new LoginPage();
         }
 
         protected override void OnStart()
         {
-
         }
 
         protected override void OnSleep()

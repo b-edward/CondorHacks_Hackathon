@@ -22,7 +22,7 @@ This Android mobile application will help users to save food by tracking what th
 * Barcode scanning for faster entry
 * Suggestions for items that have not been used after a few weeks. Use Google search to present recipes based on items already in the kitchen.
 
-### NOTE
+##### NOTE
 The app is live on Google Play Store for internal testing. Contact me to be added as a tester.
 Production release is still in review.
 

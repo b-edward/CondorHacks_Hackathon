@@ -25,6 +25,7 @@ namespace FoodSaver.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Plugin.LocalNotifications.Resource.Drawable.plugin_lc_smallicon = global::FoodSaver.Droid.Resource.Drawable.plugin_lc_smallicon;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::FoodSaver.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::FoodSaver.Droid.Resource.Attribute.font;
 			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::FoodSaver.Droid.Resource.Attribute.fontProviderAuthority;
@@ -16552,6 +16553,15 @@ namespace FoodSaver.Droid
 			// aapt resource value: 0x7F07006A
 			public const int fridge = 2131165290;
 			
+			// aapt resource value: 0x7F070072
+			public const int icon = 2131165298;
+			
+			// aapt resource value: 0x7F070073
+			public const int icon_about = 2131165299;
+			
+			// aapt resource value: 0x7F070074
+			public const int icon_feed = 2131165300;
+			
 			// aapt resource value: 0x7F07006B
 			public const int GetCooking = 2131165291;
 			
@@ -16579,14 +16589,11 @@ namespace FoodSaver.Droid
 			// aapt resource value: 0x7F070071
 			public const int ic_mtrl_chip_checked_black = 2131165297;
 			
-			// aapt resource value: 0x7F070072
-			public const int ic_mtrl_chip_checked_circle = 2131165298;
-			
-			// aapt resource value: 0x7F070073
-			public const int ic_mtrl_chip_close_circle = 2131165299;
+			// aapt resource value: 0x7F070075
+			public const int kitchen = 2131165301;
 			
 			// aapt resource value: 0x7F070076
-			public const int kitchen = 2131165302;
+			public const int logoTitle = 2131165302;
 			
 			// aapt resource value: 0x7F070077
 			public const int Logout = 2131165303;
@@ -16691,28 +16698,31 @@ namespace FoodSaver.Droid
 			public const int notify_panel_notification_icon_bg = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int preference_list_divider_material = 2131165337;
+			public const int plugin_lc_smallicon = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int SaveMoney = 2131165338;
+			public const int preference_list_divider_material = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int settings = 2131165339;
+			public const int SaveMoney = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int test_custom_background = 2131165340;
+			public const int settings = 2131165340;
 			
 			// aapt resource value: 0x7F07009D
-			public const int title = 2131165341;
+			public const int test_custom_background = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int tooltip_frame_dark = 2131165342;
+			public const int title = 2131165342;
 			
 			// aapt resource value: 0x7F07009F
-			public const int tooltip_frame_light = 2131165343;
+			public const int tooltip_frame_dark = 2131165343;
 			
 			// aapt resource value: 0x7F0700A0
-			public const int UNFoodGoals = 2131165344;
+			public const int tooltip_frame_light = 2131165344;
+			
+			// aapt resource value: 0x7F0700A1
+			public const int UNFoodGoals = 2131165345;
 			
 			static Drawable()
 			{

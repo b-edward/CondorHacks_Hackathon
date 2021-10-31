@@ -18,7 +18,6 @@ namespace FoodSaver.ViewModels
         public Command AddItemCommand { get; }
         public Command<Item> ItemTapped { get; }
 
-
         public ItemsViewModel()
         {
             Title = "Browse";
@@ -56,7 +55,7 @@ namespace FoodSaver.ViewModels
         public void OnAppearing()
         {
             IsBusy = true;
-            SelectedItem = null;
+            SelectedItem = null;            
         }
 
         public Item SelectedItem
@@ -81,5 +80,7 @@ namespace FoodSaver.ViewModels
 
             await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
         }
+
+
     }
 }

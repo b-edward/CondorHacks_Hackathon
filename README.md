@@ -23,4 +23,4 @@ This Android mobile application will help users to save food by tracking what th
 
 
 
-![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/FoodSaver.Android/Resources/drawable/logoTitle.png)
+![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/logoTitle.png)

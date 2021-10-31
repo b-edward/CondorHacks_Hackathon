@@ -24,14 +24,8 @@
 	<style name="MainTheme" parent="MainTheme.Base">
 		<item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
 		<item name="android:timePickerDialogTheme">@style/AppCompatDialogStyle</item>
-		<item name="textInputStyle">@style/TextInputLayoutTheme</item>
 		
-
-	</style>
-
-	<style name="TextInputLayoutTheme">
 		
-	</style>
 
 	<style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
 		<!--header background-->
@@ -43,7 +37,7 @@
 		<!--selected day-->
 		<item name="android:colorControlActivated">#8BB166</item>
 		<!--days of the month-->
-		<item name="android:textColorPrimary">#00ADDF</item>
+		<item name="android:textColorPrimary">#000000</item>
 		<!--days of the week-->
 		<item name="android:textColorSecondary">#FFB300</item>
 		<!--cancel&ok-->

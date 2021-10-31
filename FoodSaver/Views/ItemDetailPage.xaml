@@ -7,11 +7,12 @@
             
 
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="Food item:" FontSize="Large" FontAttributes="Bold" TextColor="DarkSlateGray"/>
-        <Label Text="{Binding Food}" FontSize="Large" TextColor="DarkSlateGray"/>
-        <Label Text="Consume by:" FontSize="Large" FontAttributes="Bold" TextColor="DarkSlateGray" />
-        <Label Text="{Binding ExpirationDate}" FontSize="Large" TextColor="DarkSlateGray"/>
-        <Label Text="{Binding ExpirationTime}" FontSize="Large" TextColor="DarkSlateGray"/>
+        
+        <Label Text="{Binding Food}" FontSize="30" FontFamily="OpenSansBold" TextColor="Black"  HorizontalOptions="Center"/>
+        <Label Text="Consume by:" FontSize="20" FontFamily="OpenSansSemiBold" TextColor="Black" />
+        <Label Text="{Binding ExpirationDate}" FontSize="18" FontFamily="OpenSansReg"  TextColor="DarkSlateGray"/>
+        <Label Text="Remind me before:" FontSize="20" FontFamily="OpenSansSemiBold" TextColor="Black" />
+        <Label Text="{Binding ExpirationTime}" FontSize="18" FontFamily="OpenSansReg" TextColor="DarkSlateGray"/>
         <!--Delete food from db when item has been eaten-->
         <Button Text="Finished" Command="{Binding DeleteCommand}"  HorizontalOptions="FillAndExpand"/>
         <!--Delete food from db when item has been eaten; Could include other functionality later on.-->

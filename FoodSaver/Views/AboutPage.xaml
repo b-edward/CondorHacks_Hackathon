@@ -24,15 +24,15 @@
 
             <Image Source="DogWait.png" VerticalOptions="Center" HeightRequest="275" Margin="0,25,0,25"/>
             <Label HorizontalTextAlignment="Center" Text="Make Delicious Meals!" FontSize="20" TextColor="#035A85"  FontFamily="OpenSansBold"/>
-            <Label Text="Get inspired by viewing everything in your kitchen." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
+            <Label Text="Get inspired by viewing everything in your kitchen. No more forgetting what's at the back of the fridge." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
 
             <Image Source="SaveMoney.png" VerticalOptions="Center" HeightRequest="300" Margin="0,25,0,25"/>
             <Label HorizontalTextAlignment="Center" Text="Save Money!" FontSize="20" TextColor="#035A85"  FontFamily="OpenSansBold"/>
-            <Label Text="Using food before it turns bad will help save you money." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 30" />
+            <Label Text="Using food before it spoils will help save you money." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 30" />
 
             <Image Source="UNFoodGoals.png" VerticalOptions="Center" HeightRequest="175" Margin="0,25,0,25"/>
             <Label HorizontalTextAlignment="Center" Text="Be Sustainable!" FontSize="20" TextColor="#035A85"  FontFamily="OpenSansBold" />
-            <Label Text="Help build a sustainable future by supporting the United Nations Sustainable Development Goals. Saving your food to reduce food waste will help reduce world hunger, fight climate change, and promote resonsible consumption." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
+            <Label Text="Help build a sustainable future by supporting the United Nations Sustainable Development Goals. Saving your food to reduce food waste will help reduce world hunger, fight climate change, and promote responsible consumption." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
 
         </StackLayout >
     </ScrollView>

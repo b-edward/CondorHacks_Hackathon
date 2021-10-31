@@ -24,8 +24,8 @@
 	<style name="MainTheme" parent="MainTheme.Base">
 		<item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
 		<item name="android:timePickerDialogTheme">@style/AppCompatDialogStyle</item>
-
 	</style>
+		
 
 	<style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
 		<!--header background-->

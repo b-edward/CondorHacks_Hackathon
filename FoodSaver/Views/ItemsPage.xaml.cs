@@ -28,5 +28,10 @@ namespace FoodSaver.Views
             base.OnAppearing();
             _viewModel.OnAppearing();            
         }
+
+        private async void OnAddItem(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(NewItemPage));
+        }
     }
 }

@@ -6,7 +6,9 @@
                 
     <ContentPage.Content>
         <StackLayout Padding="10,50,10,0" Spacing="25" >
-            <Button VerticalOptions="Center" Text="Logout" Clicked="LogoutButton_Clicked" BackgroundColor="#DB4437" Padding="10,0,10,0"/>
+            <Label Text="Thanks for doing your part to reduce food waste!" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" FontFamily="OpenSansBold" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="icon.png" HeightRequest="200" HorizontalOptions="CenterAndExpand" Margin="0,25,0,0"/>
+            <Button VerticalOptions="Center" Text="Logout" Clicked="LogoutButton_Clicked" BackgroundColor="#DB4437" Padding="10,0,10,0" Margin="0,25,0,0"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

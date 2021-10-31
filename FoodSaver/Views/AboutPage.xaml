@@ -16,28 +16,23 @@
     </ContentPage.Resources>
     <ScrollView>
         <StackLayout Orientation="Vertical">
+            <Image Source="FoodSaverLanding.png" HorizontalOptions="Center"   />
 
-            <Label Text="Welcome to Food Saver" FontSize="30" HorizontalOptions="Center" FontFamily="OpenSansBold" TextColor="#00ADDF"  Padding="10, 50, 10, 0"/>
-            <Image Source="FoodHeart.png" HorizontalOptions="Center"   />
-            <Label Text="Helping organize and reduce food waste." FontSize="20" FontFamily="NunitoReg" HorizontalTextAlignment="Center" TextColor="Black"/>
-            <Label Text="Scroll to See More" FontSize="18" Margin="10, 20, 0, 10" FontFamily="NunitoLight" HorizontalTextAlignment="Center" TextColor="Gray"/>
-            <Image Source="ArrowDown.png" Scale="0.5" Margin="10, -20, 10, 10"/>
-
-            <Image Source="BreakfastMeal.png" VerticalOptions="Center" HeightRequest="300" />
+            <Image Source="BreakfastMeal.png" VerticalOptions="Center" HeightRequest="300" Margin="0,25,0,25"/>
             <Label HorizontalTextAlignment="Center" Text="Reduce Waste!"  FontFamily="OpenSansBold" FontSize="20" TextColor="#035A85"/>
             <Label Text="You can reduce food waste by tracking what's in the kitchen and using it before it expires." FontFamily="NunitoReg" HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10"  />
-            
-            <Image Source="DogWait.png" VerticalOptions="Center" HeightRequest="275" />
-            <Label HorizontalTextAlignment="Center" Text="Make Delicious Meals!" FontSize="20" TextColor="#035A85"  FontFamily="OpenSansBold"/>
-            <Label Text="Get inspired by viewing everything in your kitchen." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
-            
-            <Image Source="SaveMoney.png" VerticalOptions="Center" HeightRequest="300" />
-            <Label HorizontalTextAlignment="Center" Text="Save Money!" FontSize="20" TextColor="#035A85"  FontFamily="OpenSansBold"/>
-            <Label Text="Using food before it turns bad will help save you money." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 30" />
 
-            <Image Source="UNFoodGoals.png" VerticalOptions="Center" HeightRequest="175"/>
-            <Label HorizontalTextAlignment="Center" Text="Support the World!" FontSize="20" TextColor="#035A85"  FontFamily="OpenSansBold" />
-            <Label Text="Help shape our future by supporting the United Nations food goals." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
+            <Image Source="DogWait.png" VerticalOptions="Center" HeightRequest="275" Margin="0,25,0,25"/>
+            <Label HorizontalTextAlignment="Center" Text="Make Delicious Meals!" FontSize="20" TextColor="#035A85"  FontFamily="OpenSansBold"/>
+            <Label Text="Get inspired by viewing everything in your kitchen. No more forgetting what's at the back of the fridge." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
+
+            <Image Source="SaveMoney.png" VerticalOptions="Center" HeightRequest="300" Margin="0,25,0,25"/>
+            <Label HorizontalTextAlignment="Center" Text="Save Money!" FontSize="20" TextColor="#035A85"  FontFamily="OpenSansBold"/>
+            <Label Text="Using food before it spoils will help save you money." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 30" />
+
+            <Image Source="UNFoodGoals.png" VerticalOptions="Center" HeightRequest="175" Margin="0,25,0,25"/>
+            <Label HorizontalTextAlignment="Center" Text="Be Sustainable!" FontSize="20" TextColor="#035A85"  FontFamily="OpenSansBold" />
+            <Label Text="Help build a sustainable future by supporting the United Nations Sustainable Development Goals. Saving your food to reduce food waste will help reduce world hunger, fight climate change, and promote responsible consumption." HorizontalTextAlignment="Center" FontFamily="NunitoReg" FontSize="18" TextColor="Black" Padding="20, 0, 20, 10" />
 
         </StackLayout >
     </ScrollView>

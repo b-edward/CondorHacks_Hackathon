@@ -19,7 +19,7 @@ namespace FoodSaver
         private FirebaseHelper db = new FirebaseHelper();
         DateTime today = DateTime.Today;
         public DateTime ExpDate;
-        string itemsExpiring;
+        string itemsExpiring = "";
 
         public AppShell()
         {
@@ -34,9 +34,13 @@ namespace FoodSaver
             // Get the db and build a string 
             await GetItems();
 
-            // Display reminder of items expiring in the next 2 days
-            await Application.Current.MainPage.DisplayAlert("Foods expiring in less than 2 days!", itemsExpiring, "OK");
-        }
+            // Check if there are items expiring soon
+            if (itemsExpiring != "")
+            {
+                // Display reminder of items expiring in the next 2 days
+                await Application.Current.MainPage.DisplayAlert("Foods expiring in less than 2 days!", itemsExpiring, "OK");
+             }
+       }
 
         public async Task GetItems()
         {

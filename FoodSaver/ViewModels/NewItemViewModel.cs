@@ -128,9 +128,19 @@ namespace FoodSaver.ViewModels
                 minutes += daysTillExpiry * 1440;   // Add 1440 minutes for each day                                                   
             }
 
-            // Schedule Notification
             string msg = "The " + Food + " is expiring on " + ExpirationDate.ToLongDateString() + "!";
-            CrossLocalNotifications.Current.Show(Food, msg, 101, DateTime.Now.AddMinutes(minutes));
+
+            // Schedule Notification
+            if (minutes < 3)
+            {
+                // If time is soon, convert to seconds for more accuracy
+                double seconds = minutes / 60;
+                CrossLocalNotifications.Current.Show(Food, msg, 101, DateTime.Now.AddSeconds(seconds));
+            }
+            else
+            {
+                CrossLocalNotifications.Current.Show(Food, msg, 101, DateTime.Now.AddMinutes(minutes));
+            }
 
             // Go back to the Items page
             await Shell.Current.GoToAsync("..");

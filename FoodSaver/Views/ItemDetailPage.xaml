@@ -11,7 +11,7 @@
         <Label Text="{Binding Food}" FontSize="30" FontFamily="OpenSansBold" TextColor="Black"  HorizontalOptions="Center"/>
         <Label Text="Consume by:" FontSize="20" FontFamily="OpenSansSemiBold" TextColor="Black" />
         <Label Text="{Binding ExpirationDate}" FontSize="18" FontFamily="OpenSansReg"  TextColor="DarkSlateGray"/>
-        <Label Text="Remind me before:" FontSize="20" FontFamily="OpenSansSemiBold" TextColor="Black" />
+        <Label Text="Reminder at:" FontSize="20" FontFamily="OpenSansSemiBold" TextColor="Black" />
         <Label Text="{Binding ExpirationTime}" FontSize="18" FontFamily="OpenSansReg" TextColor="DarkSlateGray"/>
         <!--Delete food from db when item has been eaten-->
         <Button Text="Finished" Command="{Binding DeleteCommand}"  HorizontalOptions="FillAndExpand"/>

@@ -12,11 +12,11 @@
             <Entry Text="{Binding Food, Mode=TwoWay}" FontSize="Large" TextColor="DarkSlateGray"/>
             <Label Text="Expires on:" FontSize="24"  FontFamily="OpenSansSemiBold" TextColor="DarkSlateGray"/>
             <DatePicker Date="{Binding ExpirationDate, Mode=TwoWay}" Format="D" FontSize="Large"/>
-            <Label Text="Remind me before:" FontSize="24"  FontFamily="OpenSansSemiBold" TextColor="DarkSlateGray"/>
+            <Label Text="Remind me at:" FontSize="24"  FontFamily="OpenSansSemiBold" TextColor="DarkSlateGray"/>
             <TimePicker Time="{Binding ExpirationTime, Mode=TwoWay}" FontSize="Large" />
             <StackLayout Orientation="Horizontal">
-                <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
-                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand" BackgroundColor="#DB4437"/>
+                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

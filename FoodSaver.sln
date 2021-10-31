@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSaver.Android", "FoodSaver.Android\FoodSaver.Android.csproj", "{403DE303-0A2B-4460-B1D0-A22B93A83D18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSaver", "FoodSaver\FoodSaver.csproj", "{1CAE1BA3-EEBD-46B5-91F5-D4452E4B8DAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodSaver", "FoodSaver\FoodSaver.csproj", "{1CAE1BA3-EEBD-46B5-91F5-D4452E4B8DAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

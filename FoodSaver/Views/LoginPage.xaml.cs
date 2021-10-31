@@ -55,7 +55,7 @@ namespace FoodSaver.Views
 
         private void RegisterTappedGesture(object sender, EventArgs e)
         {
-            DisplayAlert("Registation Placeholder", "Please contact the administrator for login credentials", "OK");
+            DisplayAlert("Registration Placeholder", "Please contact the administrator for login credentials", "OK");
         }
 
 

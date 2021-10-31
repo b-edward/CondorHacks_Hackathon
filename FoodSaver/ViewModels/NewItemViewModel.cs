@@ -78,11 +78,24 @@ namespace FoodSaver.ViewModels
             int hour = int.Parse(timeArray[0]);
             string amPm = "AM";
 
+            // Check if its afternoon
             if(hour > 12)
             {
                 hour = hour - 12;
                 timeArray[0] = hour.ToString();
                 amPm = "PM";
+            }
+            // Check if it is exactly noon
+            else if (hour == 12)
+            {
+                timeArray[0] = hour.ToString();
+                amPm = "PM";
+            }
+            // Check if it is exactly midnight
+            else if (hour == 0)
+            {
+                timeArray[0] = "12";
+                amPm = "AM";
             }
 
             tempTime = timeArray[0] + ":" + timeArray[1] + " " + amPm;
@@ -116,7 +129,7 @@ namespace FoodSaver.ViewModels
             }
 
             // Schedule Notification
-            string msg = Food + " is expiring on " + ExpirationDate.ToLongDateString() + "\n! Be sure to finish this food!";
+            string msg = "The " + Food + " is expiring on " + ExpirationDate.ToLongDateString() + "!";
             CrossLocalNotifications.Current.Show(Food, msg, 101, DateTime.Now.AddMinutes(minutes));
 
             // Go back to the Items page

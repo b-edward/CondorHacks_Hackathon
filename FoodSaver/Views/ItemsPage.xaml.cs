@@ -26,10 +26,7 @@ namespace FoodSaver.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            _viewModel.OnAppearing();
-
-            // Alert to warn of food nearing expiration
-            //DisplayAlert("Alert", "You have been alerted", "OK");
+            _viewModel.OnAppearing();            
         }
     }
 }

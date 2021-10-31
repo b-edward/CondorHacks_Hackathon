@@ -7,10 +7,11 @@
              x:Class="FoodSaver.Views.LoginPage"
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <StackLayout Padding="10,50,10,0" BackgroundColor="White">
-            <Label Text="Food Saver" FontSize="40" HorizontalOptions="Center" FontFamily="OpenSansBold" TextColor="#00ADDF"/>
-           <Image Source="GetCooking.png" HeightRequest="250" />
-            <Label Text="A Brilliant App for Managing Food" FontSize="18" FontFamily="NunitoLight" HorizontalTextAlignment="Center" TextColor="Gray"/>
+        <StackLayout Padding="10,30,10,0" BackgroundColor="White">
+            <!--<Label Text="Food Saver" FontSize="40" HorizontalOptions="Center" FontFamily="OpenSansBold" TextColor="#00ADDF"/>-->
+            <Image Source="logoTitle.png" HeightRequest="50" Margin="0, 0, 0, 25"/>
+            <Image Source="GetCooking.png" HeightRequest="250" />
+            <Label Text="A Brilliant App for Managing Food" FontSize="Large" FontFamily="NunitoLight" Margin="10,0,0,30" HorizontalTextAlignment="Center" TextColor="DarkSlateGray"/>
          
             <Entry x:Name="Username" Text=" {Binding Username}" Placeholder="Username" PlaceholderColor="LightSlateGray" HeightRequest="40" Keyboard="Text" TextColor="Black"/>
             <Entry x:Name="Password" Text=" {Binding Password}" Placeholder="Password" PlaceholderColor="LightSlateGray" HeightRequest="40" IsPassword="True" TextColor="Black"/>

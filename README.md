@@ -22,6 +22,10 @@ This Android mobile application will help users to save food by tracking what th
 * Barcode scanning for faster entry
 * Suggestions for items that have not been used after a few weeks. Use Google search to present recipes based on items already in the kitchen.
 
+### NOTE
+The app is live on Google Play Store for internal testing. Contact me to be added as a tester.
+Production release is still in review.
+
 
 ![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/feature.png)
 
@@ -35,3 +39,6 @@ This Android mobile application will help users to save food by tracking what th
 ![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635659498.png)
 
 ![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635660269.png)
+
+
+![Play Store](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/PlayStoreInternalTest.png)

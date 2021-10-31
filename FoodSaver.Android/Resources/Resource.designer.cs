@@ -16586,6 +16586,9 @@ namespace FoodSaver.Droid
 			// aapt resource value: 0x7F070072
 			public const int ic_mtrl_chip_close_circle = 2131165298;
 			
+			// aapt resource value: 0x7F070073
+			public const int ic_mtrl_chip_close_circle = 2131165299;
+			
 			// aapt resource value: 0x7F070076
 			public const int kitchen = 2131165302;
 			

@@ -2,6 +2,7 @@
 using FoodSaver.Views;
 using FoodSaver.Services;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace FoodSaver.ViewModels
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
         public Command<Item> ItemTapped { get; }
+        public SortedList<double, Item> sortedByDate = new SortedList<double, Item>();
 
         public ItemsViewModel()
         {
@@ -32,14 +34,35 @@ namespace FoodSaver.ViewModels
         async Task ExecuteLoadItemsCommand()
         {
             IsBusy = true;
+            double date = 0.0;
+
+            // Clear lists to prevent duplication
+            Items.Clear();
+            sortedByDate.Clear();
 
             try
             {
-                Items.Clear();
-                var items = await db.GetAllItems();
-                foreach (var item in items)
+                // Sort the items
+                // Get the list from db
+                var getDB = await db.GetAllItems();
+                // Add each item to the sorted list
+                foreach (var item in getDB)
                 {
-                    Items.Add(item);
+                    // Get the expiry date and convert to OA date
+                    DateTime oa = DateTime.Parse(item.ExpirationDate);
+                    date = oa.ToOADate();
+                    // Increment the date key to ensure no collisions
+                    while (sortedByDate.ContainsKey(date))
+                    {
+                        date += 0.000000001;
+                    }
+                    sortedByDate.Add(date, item);
+                }                
+                                
+                // Display the items in order of expiry dates
+                foreach (var item in sortedByDate)
+                { 
+                    Items.Add(item.Value);
                 }
             }
             catch (Exception ex)

@@ -1,5 +1,6 @@
 ![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/logoTitle.png)
 
+## Update: Food Saver was awarded 1st Place at CondorHacks! We look forward to continuing to improve and implement more features!
 
 ### Food Saver is a project Submission for CondorHacks Hackathon 2021, hosted by Google Developer Student Club at Conestoga College.
 
@@ -27,18 +28,18 @@ The app is live on Google Play Store for internal testing. Please contact me [ed
 Production release is still in review.
 
 
-![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/feature.png)
+![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/feature.png)<br/>
 
+![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/1stPlace.PNG)<br/>
 
-![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635659378.png)
+![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635694146.png)<br/>
 
-![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635659405.png)
+![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635659405.png)<br/>
 
-![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635659478.png)
+![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635659478.png)<br/>
 
-![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635659498.png)
+![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635659498.png)<br/>
 
-![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635660269.png)
-
+![User Interface Example](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/Screenshot_1635660269.png)<br/>
 
 ![Play Store](https://github.com/b-edward/CondorHacks_Hackathon/blob/main/FoodSaver.Android/Resources/drawable/PlayStoreInternalTest.png)
